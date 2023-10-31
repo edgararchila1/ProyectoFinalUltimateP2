@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="org.example.pkgDTO.DTOInscripcionesEntity">
+        <table name="inscripciones" schema="public" catalog="ProyectoFinalP2"/>
+        <attributes>
+            <id name="idInscripcion">
+                <column name="id_inscripcion"/>
+            </id>
+            <basic name="idEstudiante">
+                <column name="id_estudiante"/>
+            </basic>
+            <basic name="idCurso">
+                <column name="id_curso"/>
+            </basic>
+            <basic name="fechaInscripcion">
+                <column name="fecha_inscripcion"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
